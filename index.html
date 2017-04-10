@@ -1,0 +1,63 @@
+<!DOCTYPE HTML>
+<html ng-app='MyApp'>
+
+<head>
+  <title>Loc8parts</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+  <link href="css/bootstrap.min.css" rel='stylesheet' type='text/css' />
+  <!-- Custom CSS -->
+  <link href="css/style.css" rel='stylesheet' type='text/css' />
+  <link href="css/stylesheets/styles.css" rel='stylesheet' type='text/css' />
+  <link rel="stylesheet" href="css/morris.css" type="text/css" />
+  <!-- Graph CSS -->
+  <link href="css/font-awesome.css" rel="stylesheet">
+  <!-- jQuery -->
+  <script src="js/jquery-2.1.4.min.js"></script>
+  <!-- //jQuery -->
+  <link rel="stylesheet" href="css/icon-font.min.css" type='text/css' />
+  <!-- //lined-icons -->
+
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/angular.js/1.6.1/angular.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/angular-ui-router/0.4.2/angular-ui-router.min.js"></script>
+
+  <script language="JavaScript" src='app.js'></script>
+
+  <!-- Third-party Libraries -->
+  <script src="src/vendor/angular-animate.js"></script>
+  <script src="src/vendor/angular-messages.js"></script>
+  <script src="src/vendor/angular-resource.js"></script>
+  <script src="src/vendor/angular-sanitize.js"></script>
+  <script src="src/vendor/angular-toastr.tpls.js"></script>
+  <script src="src/vendor/satellizer.js"></script>
+
+<!-- Application Code -->
+<script src="src/directives/passwordStrength.js"></script>
+<script src="src/directives/passwordMatch.js"></script>
+<script src="src/controllers/home.js"></script>
+<script src="src/controllers/login.js"></script>
+<script src="src/controllers/signup.js"></script>
+<script src="src/controllers/logout.js"></script>
+<script src="src/controllers/profile.js"></script>
+<script src="src/controllers/navbar.js"></script>
+<script src="src/services/account.js"></script>
+<script src="src/services/logout.js"></script>
+
+<script src="src/views/mainPage.js"></script>
+<script src="src/views/AddaCar.js"></script>
+<script src="src/views/carsInGarage.js"></script>
+<script src="src/views/editCarsinGarage.js"></script>
+<script src="src/constants.js"></script>
+</head>
+
+<body>
+
+  <div ui-view></div>
+
+</body>
+
+<!--js -->
+<script src="js/bootstrap.min.js"></script>
+<!--<script src="js/morris.js"></script>-->
+
+</html>

@@ -1,0 +1,28 @@
+  <!--header start here-->
+        <div ng-include="'src/views/shared/header.html'"></div>   
+<div class="container">
+  <div class="panel panel-default">
+    <div class="panel-heading">Profile</div>
+    <div class="panel-body">
+      <legend><i class="ion-clipboard"></i> Edit My Profile</legend>
+      <form method="post" ng-submit="updateProfile()">
+        <div class="form-group">
+          <label class="control-label">Profile Picture</label>
+          <img class="profile-picture" ng-src="{{user.picture || 'https://placehold.it/100x100'}}">
+        </div>
+        <div class="form-group">
+          <label class="control-label"><i class="ion-person"></i>phone </label>
+          <input type="text" class="form-control" ng-model="user.user_phone" />
+        </div>
+        <div class="form-group">
+          <label class="control-label"><i class="ion-at"></i> full Address</label>
+          <input type="text" class="form-control" ng-model="user.full_address" />
+        </div>
+        <button class="btn btn-lg btn-success">Update Information</button>
+      </form>
+    </div>
+  </div>
+
+ </div>
+ <!--/sidebar-menu-->
+    <div ng-include="'src/views/shared/sidebar.html'"></div>

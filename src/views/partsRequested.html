@@ -1,0 +1,115 @@
+<!DOCTYPE HTML>
+<html>
+   <body>       
+      <div class="page-container">
+         <!--/content-inner-->
+         <div class="left-content">
+            <div class="mother-grid-inner">
+               <!--header start here-->
+                <div ng-include="'src/views/shared/header.html'"></div>
+              
+               <!--grid-->
+               <div class="validation-system">
+                  <div class="validation-form">
+                     <!---->
+                     <form ng-submit="requestParts()">               
+                        
+                           
+                        <div class="vali-form">
+                         <div class="col-md-6 form-group1 form-last">
+                              <label class="control-label">status</label>
+                              <input type="number" placeholder="status"  ng-model="partsRequest.status" name="status" required="">
+                           </div>
+                           <div class="col-md-6 form-group1">
+                              <label class="control-label">country</label>
+                              <input type="text" placeholder="country"  ng-model="partsRequest.country" name="country" required="">
+                           </div>
+                           <div class="col-md-6 form-group1 form-last">
+                              <label class="control-label">car_registration</label>
+                              <input type="text" placeholder="car_registration"  ng-model="partsRequest.car_registration" name="car_registration" required="">
+                           </div>
+                             <div class="col-md-6 form-group1">
+                              <label class="control-label">part_name</label>
+                              <input type="text" placeholder="part_name"  ng-model="partsRequest.part_name" name="part_name" required="">
+                           </div>
+                           <div class="col-md-6 form-group1 form-last">
+                              <label class="control-label">part_number</label>
+                              <input type="text" placeholder="part_number"  ng-model="partsRequest.part_number" name="part_number" required="">
+                           </div>
+                             <div class="col-md-6 form-group1">
+                              <label class="control-label">part_colour</label>
+                              <input type="text" placeholder="part_colour"  ng-model="partsRequest.part_colour" name="part_colour" required="">
+                           </div>
+                           <div class="col-md-6 form-group1 form-last">
+                              <label class="control-label">part_catagory</label>
+                              <input type="text" placeholder="part_catagory"  ng-model="partsRequest.part_catagory" name="part_catagory" required="">
+                           </div>
+                             <div class="col-md-6 form-group1">
+                              <label class="control-label">part_notes</label>
+                              <input type="text" placeholder="part_notes"  ng-model="partsRequest.part_notes" name="part_notes" required="">
+                           </div>
+                           <div class="col-md-6 form-group1 form-last">
+                              <label class="control-label">part_postcode_delivery</label>
+                              <input type="text" placeholder="part_postcode_delivery"  ng-model="partsRequest.part_postcode_delivery" name="part_postcode_delivery" required="">
+                           </div>                           
+                           <div class="col-md-6 form-group1 form-last">
+                              <label class="control-label">part_status</label>
+                              <input type="text" placeholder="part_status"  ng-model="partsRequest.part_status" name="part_status" required="">
+                           </div>
+                             <div class="col-md-6 form-group1">
+                              <label class="control-label">part_urgency</label>
+                              <input type="text" placeholder="part_urgency"  ng-model="partsRequest.part_urgency" name="part_urgency" required="">
+                           </div>
+                           <div class="col-md-6 form-group1 form-last">
+                              <label class="control-label">part_request_status</label>
+                              <input type="text" placeholder="part_request_status"  ng-model="partsRequest.part_request_status" name="part_request_status" required="">
+                           </div>
+                             <div class="col-md-6 form-group1">
+                              <label class="control-label">part_img1</label>
+                              <input type="text" placeholder="part_img1"  ng-model="partsRequest.part_img1" name="part_img1" required="">
+                           </div>
+                           <div class="col-md-6 form-group1 form-last">
+                              <label class="control-label">part_img2</label>
+                              <input type="text" placeholder="part_img2"  ng-model="partsRequest.part_img2" name="part_img2" required="">
+                           </div>
+                             <div class="col-md-6 form-group1">
+                              <label class="control-label">part_img3</label>
+                              <input type="text" placeholder="part_img3"  ng-model="partsRequest.part_img3" name="part_img3" required="">
+                           </div>
+                           <div class="col-md-6 form-group1 form-last">
+                              <label class="control-label">part_img4</label>
+                              <input type="text" placeholder="part_img4"  ng-model="partsRequest.part_img4" name="part_img4" required="">
+                           </div>
+                             <div class="col-md-6 form-group1">
+                              <label class="control-label">condition_new</label>
+                              <input type="text" placeholder="condition_new"  ng-model="partsRequest.condition_new" name="condition_new" required="">
+                           </div>
+                           <div class="col-md-6 form-group1 form-last">
+                              <label class="control-label">condition_used</label>
+                              <input type="text" placeholder="condition_used"  ng-model="partsRequest.condition_used" name="condition_used" required="">
+                           </div>
+                            <div class="col-md-6 form-group1 form-last">
+                              <label class="control-label">condition_oem</label>
+                              <input type="text" placeholder="condition_oem"  ng-model="partsRequest.condition_oem" name="condition_oem" required="">
+                           </div>          
+                        <div class="clearfix"> </div>
+                        <div class="col-md-12 form-group">
+                           <button type="submit" class="btn btn-primary">Submit</button>
+                           <button type="reset" class="btn btn-default">Reset</button>
+                        </div>
+                        <div class="clearfix"> </div>
+                     </form>
+                     <!---->
+                  </div>
+            
+            </div>
+         </div>
+    
+         <!--/sidebar-menu-->
+         <div ng-include="'src/views/shared/sidebar.html'"></div>
+
+         <div class="clearfix"></div>
+      </div>
+
+   </body>
+</html>

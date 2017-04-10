@@ -1,0 +1,38 @@
+<!DOCTYPE HTML>
+<html>
+
+<body>
+    <div class="page-container">
+        <!--/content-inner-->
+        <div class="left-content">
+            <div class="mother-grid-inner">
+                <!--header start here-->
+                <div ng-include="'src/views/shared/header.html'"></div>
+
+                <!--/sidebar-menu-->
+                <div ng-include="'src/views/shared/sidebar.html'"></div>
+                <div class="table-container">
+                    <table class="table table-bordered">
+                        <thead>
+                            <tr>
+                                <th>S.N.</th>
+                                <th>car_registration</th>
+                                <th>Delete/Update</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr ng-repeat="data in carsinGarage track by $index">
+                                <td>{{$index+1}}</td>
+                                <td>{{data.car_registration}}</td>
+                                <td ><i class="fa fa-trash" ng-click="deleteCarInGarage(data.usercarID)"></i> <i ui-sref="editcar({carid:data.usercarID})"  class="fa fa-pencil-square-o"></i></td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </div>
+                <div class="clearfix"></div>
+            </div>
+        </div>
+    </div>
+</body>
+
+</html>

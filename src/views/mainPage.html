@@ -1,0 +1,62 @@
+<div class="page-container">
+    <!--/content-inner-->
+    <div class="left-content">
+      <div class="mother-grid-inner">
+        <!--header start here-->
+        <div ng-include="'src/views/shared/header.html'"></div>   
+        <!--four-grids here-->
+        <div class="four-grids">
+          <div class="col-md-3 four-grid">
+            <div class="four-agileits" ui-sref="carInGarage">
+              <div class="icon">
+                <i class="fa fa-cab" aria-hidden="true"></i>
+              </div>
+              <div class="four-text" >
+                <h3>cars in garage</h3>
+                <h4 > {{numberOfCar}}</h4>
+              </div>
+            </div>
+          </div>
+          <div class="col-md-3 four-grid">
+            <div class="four-agileinfo">
+              <div class="icon">
+                <i class="fa fa-recycle" aria-hidden="true"></i>
+              </div>
+              <div class="four-text">
+                <h3>Parts requested</h3>
+                <h4>{{numberOfPartsRequest}}</h4>
+              </div>
+            </div>
+          </div>
+          <div class="col-md-3 four-grid">
+            <div class="four-w3ls">
+              <div class="icon">
+                <i class="fa fa-envelope" aria-hidden="true"></i>
+              </div>
+              <div class="four-text">
+                <h3>message</h3>
+                <h4>1</h4>
+              </div>
+            </div>
+          </div>
+          <div class="col-md-3 four-grid">
+            <div class="four-wthree">
+              <div class="icon">
+                <i class="fa fa-heart" aria-hidden="true"></i>
+              </div>
+              <div class="four-text">
+                <h3>saved parts</h3>
+                <h4>1</h4>
+              </div>
+            </div>
+          </div>
+          <div class="clearfix"></div>
+        </div>
+      </div>
+    </div>
+    <!--//content-inner-->
+    <!--/sidebar-menu-->
+    <div ng-include="'src/views/shared/sidebar.html'"></div>
+
+    <div class="clearfix"></div>
+  </div>

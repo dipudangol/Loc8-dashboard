@@ -1,0 +1,141 @@
+<!DOCTYPE HTML>
+<html>
+   <body>       
+      <div class="page-container">
+         <!--/content-inner-->
+         <div class="left-content">
+            <div class="mother-grid-inner">
+               <!--header start here-->
+              <div ng-include="'src/views/shared/header.html'"></div>
+               <!--grid-->
+               <div class="validation-system">
+                  <div class="validation-form">
+                     <!---->
+                     <form ng-submit="addCar()">
+                        <div class="vali-form">
+                            <div class="col-md-6 form-group1">
+                              <label class="control-label">car_registration</label>
+                              <input type="text"  ng-model="car.car_registration" name="car_registration" placeholder="car_registration" required="">
+                           </div>
+                           <div class="col-md-6 form-group1">
+                              <label class="control-label">car_year_manuf</label>
+                              <input type="text"  ng-model="car.car_year_manuf" name="car_year_manuf" placeholder="car_year_manuf" required="">
+                           </div>
+                           <div class="col-md-6 form-group1">
+                              <label class="control-label">car_fuel</label>
+                              <input type="text"  ng-model="car.car_fuel" name="car_fuel" placeholder="car_fuel" required="">
+                           </div>
+                           <div class="col-md-6 form-group1 form-last">
+                              <label class="control-label">car_year_reg</label>
+                              <input type="text" placeholder="car_year_reg"  ng-model="car.car_year_reg" name="car_year_reg" required="">
+                           </div>
+                            <div class="vali-form">
+                           <div class="col-md-6 form-group1">
+                              <label class="control-label"> car_make</label>
+                              <input type="text" placeholder=" car_make"  ng-model="car.car_make" name=" car_make" required="">
+                           </div>
+                           <div class="col-md-6 form-group1 form-last">
+                              <label class="control-label">car_model</label>
+                              <input type="text" placeholder="car_model"  ng-model="car.car_model" name="car_model" required="">
+                           </div>
+                            <div class="vali-form">
+                           <div class="col-md-6 form-group1">
+                              <label class="control-label">car_trim</label>
+                              <input type="text" placeholder="car_trim"  ng-model="car.car_trim" name="car_trim" required="">
+                           </div>
+                           <div class="col-md-6 form-group1 form-last">
+                              <label class="control-label">car_variant</label>
+                              <input type="text" placeholder="car_variant"  ng-model="car.car_variant" name="car_variant" required="">
+                           </div>
+                            <div class="vali-form">
+                           <div class="col-md-6 form-group1">
+                              <label class="control-label">car_transmission</label>
+                              <input type="text"  ng-model="car.car_transmission" name="car_transmission" placeholder="car_transmission" required="">
+                           </div>
+                           <div class="col-md-6 form-group1 form-last">
+                              <label class="control-label">car_engine</label>
+                              <input type="text" placeholder="car_engine"  ng-model="car.car_engine" name="car_engine" required="">
+                           </div>
+                            <div class="vali-form">
+                           <div class="col-md-6 form-group1">
+                              <label class="control-label">car_colour</label>
+                              <input type="text" placeholder="car_colour"  ng-model="car.car_colour" name="car_colour" required="">
+                           </div>
+                           <div class="col-md-6 form-group1 form-last">
+                              <label class="control-label">car_colour_code</label>
+                              <input type="text" placeholder="car_colour_code"  ng-model="car.car_colour_code" name="car_colour_code" required="">
+                           </div>
+                            <div class="vali-form">
+                           <div class="col-md-6 form-group1">
+                              <label class="control-label">co2Emissions</label>
+                              <input type="text" placeholder="co2Emissions"  ng-model="car.co2Emissions" name="co2Emissions" required="">
+                           </div>
+                           <div class="col-md-6 form-group1 form-last">
+                              <label class="control-label">mot</label>
+                              <input type="text" placeholder="mot"  ng-model="car.mot" name="mot" required="">
+                           </div>
+                            <div class="vali-form">
+                           <div class="col-md-6 form-group1">
+                              <label class="control-label">motDetails</label>
+                              <input type="text" placeholder="motDetails"  ng-model="car.motDetails" name="motDetails" required="">
+                           </div>
+                           <div class="col-md-6 form-group1 form-last">
+                              <label class="control-label">taxed</label>
+                              <input type="text" placeholder="taxed"  ng-model="car.taxed" name="taxed" required="">
+                           </div>
+                            <div class="vali-form">
+                           <div class="col-md-6 form-group1">
+                              <label class="control-label">taxDetails</label>
+                              <input type="text" placeholder="taxDetails"  ng-model="car.taxDetails" name="taxDetails" required="">
+                           </div>
+                           <div class="col-md-6 form-group1 form-last">
+                              <label class="control-label">taxStatus</label>
+                              <input type="text" placeholder="taxStatus"  ng-model="car.taxStatus" name="taxStatus" required="">
+                           </div>
+                            <div class="vali-form">
+                           <div class="col-md-6 form-group1">
+                              <label class="control-label">sixMonthRate</label>
+                              <input type="text" placeholder="sixMonthRate"  ng-model="car.sixMonthRate" name="sixMonthRate" required="">
+                           </div>
+                           <div class="col-md-6 form-group1 form-last">
+                              <label class="control-label">twelveMonthRate</label>
+                              <input type="text" placeholder="twelveMonthRate"  ng-model="car.twelveMonthRate" name="twelveMonthRate" required="">
+                           </div>
+                            <div class="vali-form">
+                           <div class="col-md-6 form-group1">
+                              <label class="control-label">wheelPlan</label>
+                              <input type="text" placeholder="wheelPlan"  ng-model="car.wheelPlan" name="wheelPlan" required="">
+                           </div>
+                           <div class="col-md-6 form-group1 form-last">
+                              <label class="control-label">typeApproval</label>
+                              <input type="text" placeholder="typeApproval"  ng-model="car.typeApproval" name="typeApproval" required="">
+                           </div>
+                            <div class="vali-form">
+                           <div class="col-md-6 form-group1">
+                              <label class="control-label">revenueWeight</label>
+                              <input type="text" placeholder="revenueWeight"  ng-model="car.revenueWeight" name="revenueWeight" required="">
+                           </div>                        
+                                    
+                           <div class="clearfix"> </div>
+                        </div>                       
+                        <div class="clearfix"> </div>
+                        <div class="col-md-12 form-group">
+                           <button type="submit" class="btn btn-primary">Submit</button>
+                           <button type="reset" class="btn btn-default">Reset</button>
+                        </div>
+                        <div class="clearfix"> </div>
+                     </form>
+                     <!---->
+                  </div>
+               </div>
+            </div>
+         </div>
+    
+         <!--/sidebar-menu-->
+         <div ng-include="'src/views/shared/sidebar.html'"></div>
+
+         <div class="clearfix"></div>
+      </div>
+
+   </body>
+</html>
